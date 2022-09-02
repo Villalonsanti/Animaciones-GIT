@@ -1,0 +1,147 @@
+/* mobile last */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+header{
+background-color:  #0d9cda ;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-image: linear-gradient(red,orange,blue);
+}
+header h1{
+   color: rgb(0, 0, 0);
+   border: 5px solid darkgoldenrod;
+}
+header li, footer li{
+    margin: 15px;
+}
+ header img:hover{
+   margin-top: 25px;
+    padding: 15px;
+    border-radius: 50%;
+    transform: scale(0.5,0.2); 
+    transform:skew(10deg) ;
+    transition: 5s;
+  
+ }
+ header ul{
+    list-style: none;
+    display: flex;
+ }
+ header a, footer a{
+    color: white;
+    text-decoration: none;
+ }
+ header a:hover{
+    color: black;
+    font-weight: bold;
+ }
+ 
+ /* main */
+ .main-index, .main-productos, .main-contactos, .main-faq{
+   width: 100vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+ }
+
+  h2{
+   display: flex;
+   width: 100vw;
+   margin: 10px;
+   color: darkorange;
+   justify-content: center;
+   background-color: black;
+   flex-direction: column;align-items: center;
+ }
+.container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 3rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+div img{
+      width: 250px;
+      height: 250px;
+   border: 5px solid black;
+   object-fit: cover;
+  
+}
+
+
+button{
+   border: 3px solid red ;
+}
+article{
+   color: white;
+   background-color: rgb(0, 53, 158);
+}
+form{
+background-color: goldenrod;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+}
+ /* galeria */
+
+ 
+ .fotos{
+    
+     display: grid;
+     grid-template-columns:repeat(2,1fr) ;
+     align-items: center;
+     justify-items: center;
+     justify-content: center;
+    
+ }
+
+.fotos img{
+    height: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.fotos div{
+    height: 250px;
+    width: 250px;  
+}
+ /* footer */
+ footer{
+    background-color:  #0d9cda ;
+ }
+ footer ul{
+    display: flex;
+    list-style: none;
+    width:450px;
+    margin: 0 auto;
+    justify-content: center;
+ }
+ 
+ @media (min-width:850px){
+
+   .fotos{
+      columns:repeat(2,1fr);
+      grid-template-columns: repeat(2,1fr);
+    }
+    
+    }
+
+ 
+ 
+ @media (max-width:1150px){
+    .header{
+        flex-direction: column;
+    }
+    .header img{
+        flex-direction: column;
+    }
+    div img{
+      columns:repeat(1,1fr);
+      grid-template-columns: repeat(1,1fr);
+    }  
+ }
